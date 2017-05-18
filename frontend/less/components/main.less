@@ -112,12 +112,18 @@
 
   border-bottom: 4px dotted @information-block-border-color;
   border-top: 4px dotted @information-block-border-color;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
 
 .client-testimonials {
-  width: 488px;
+  float: left;
+  width: 479px;
   min-height: 370px;
-  padding-right: 30px;
   box-sizing: border-box;
 
   border-right: 4px dotted @client-testimonials-border-color;
@@ -181,5 +187,49 @@
     font-weight: normal;
     text-decoration: none;
     color: @testimonial-autor-organization-color;
+  }
+}
+
+.featured-project {
+  float: right;
+  width: 479px;
+  min-height: 370px;
+  padding-left: 53px;
+  box-sizing: border-box;
+
+  &__head {
+    margin-bottom: 32px;
+
+    font-size: @featured-project-head-font-size;
+    line-height: @featured-project-head-line-height;
+    font-weight: normal;
+    color: @featured-project-head-color;
+  }
+
+  &__project-name {
+    margin-bottom: 13px;
+
+    font-size: @featured-project-name-font-size;
+    line-height: @featured-project-name-line-height;
+    font-weight: normal;
+    color: @featured-project-name-color;
+  }
+
+  &__project-img {
+    margin-bottom: 21px;
+  }
+
+  &__project-describe {
+    font-size: @project-describe-font-size;
+    line-height: @project-describe-line-height;
+    color: @project-describe-color;
+  }
+
+  &__project-details {
+    font-size: @project-details-font-size;
+    line-height: @project-details-line-height;
+    font-weight: normal;
+    text-decoration: none;
+    color: @project-details-color;
   }
 }
