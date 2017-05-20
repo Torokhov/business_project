@@ -19,6 +19,7 @@ const imagemin = require('gulp-imagemin');
 const spritesmith = require('gulp-spritesmith');
 const rigger = require('gulp-rigger');
 const fileinclude = require('gulp-file-include');
+const gulpfonts = require('gulp-font');
 
 const webpackStream = require('webpack-stream');
 const webpack = webpackStream.webpack;
