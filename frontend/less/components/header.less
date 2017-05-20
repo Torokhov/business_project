@@ -1,5 +1,5 @@
 .main-header {
-  padding: 31px 71px;
+  padding: 34px 68px;
   min-height: 134px;
   box-sizing: border-box;
   
@@ -30,13 +30,13 @@
   float: right;
   min-height: 60px;
   box-sizing: border-box;
-  padding-top: 35px;
+  padding-top: 37px;
   
   &__item {
     position: relative;
     
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 27px;
     
     &::after {
       content: "--";
@@ -50,6 +50,10 @@
       content: "";
     }
     
+    &:last-child {
+      margin-right: 0px;
+    }
+
     a {
       font-family: @font-family-alt-normal, sans-serif;
       font-size: @nav-font-size;
